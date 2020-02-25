@@ -3,6 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 //import PropsExample from "./PropsExample";
 import { StackNavigator } from 'react-navigation'
 import Counter from "./Counter";
+import 'react-native-gesture-handler';
 
 class App extends Component {
     static navigationOptions = {
@@ -22,6 +23,7 @@ class App extends Component {
 
     render() {
         // let {msg} = this.state
+        let { navigate } = this.props.navigation
 
         return (
             <View style={styles.container}>
